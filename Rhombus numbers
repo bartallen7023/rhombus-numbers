@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    int l = 10;
+    int j;
+    int n;
+    int d = 9;
+    for (int i = 1; i <= 10; i++)
+      {
+
+	for (j = l - 1; j >= 0; j--)
+	  {
+	    System.out.print (" ");
+	  }
+	for (int k = 1; k <= i; k++)
+	  {
+	    if (k == 10)
+	      {
+		k = 1;
+		System.out.print (k);
+		break;
+	      }
+
+	    System.out.print (k);
+	  }
+	for (n = i - 1; n > 0; n--)
+	  {
+	    System.out.print (n);
+	  }
+	System.out.println ();
+	l--;
+      }
+    for (int a = 1; a <= 10; a++)
+      {
+	for (int b = a + 1; b > 0; b--)
+	  {
+	    System.out.print (" ");
+	  }
+	for (int c = 1; c <= d; c++)
+	  {
+	    System.out.print (c);
+	  }
+	for (int e = d - 1; e > 0; e--)
+	  {
+	    System.out.print (e);
+	  }
+	d--;
+	System.out.println ();
+      }
+  }
+}
